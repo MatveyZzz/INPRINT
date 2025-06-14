@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INPRINT POSTERS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>INPRINT</header>
+
+  <main>
+    <h1>Великое начинается с вдохновления</h1>
+
+    <section class="products">
+      <div class="product" data-id="poster1" data-name="Постер 1" data-price="1500">
+        <img src="images/poster1.jpg" alt="Постер 1" />
+        <div class="product-info">
+          <h2>Постер 1</h2>
+          <p>1500 ₽</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </div>
+
+      <div class="product" data-id="poster2" data-name="Постер 2" data-price="1700">
+        <img src="images/poster2.jpg" alt="Постер 2" />
+        <div class="product-info">
+          <h2>Постер 2</h2>
+          <p>1700 ₽</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </div>
+
+      <div class="product" data-id="poster3" data-name="Постер 3" data-price="1300">
+        <img src="images/poster3.jpg" alt="Постер 3" />
+        <div class="product-info">
+          <h2>Постер 3</h2>
+          <p>1300 ₽</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="cart">
+      <h2>Корзина</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Итого: 0 ₽</p>
+      <button id="checkout-btn" disabled>Оформить предзаказ</button>
+    </aside>
+
+    <section id="checkout-section" class="hidden">
+      <h2>Оформление заказа</h2>
+      <form id="checkout-form">
+        <label>Email для связи:<br />
+          <input type="email" name="email" required />
+        </label>
+        <button type="submit">Подтвердить заказ</button>
+        <button type="button" id="cancel-checkout">Отмена</button>
+      </form>
+    </section>
+
+    <section id="payment-info" class="hidden">
+      <h2>Оплата</h2>
+      <p>Пожалуйста, переведите сумму на карту:</p>
+      <p><strong>Номер карты:</strong> 1234 5678 9012 3456</p>
+      <p>После оплаты отправьте подтверждение на почту: support@cyberposters.ru</p>
+    </section>
+  </main>
+
+  <footer>© 2025 INPRINT</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
